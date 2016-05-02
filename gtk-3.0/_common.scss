@@ -513,7 +513,7 @@ GtkTextView { // This will get overridden by .view,
     // child, a label needs just lateral padding while an icon needs vertical
     // padding added too.
 
-    outline-offset: -0.2em; // needs to be set or it gets overriden 
+    outline-offset: -0.2em; // needs to be set or it gets overriden
                             // by GtkRadioButton outline-offset
 
     > .label {
@@ -777,8 +777,8 @@ GtkColorButton.button {
 
   padding: 0.4em 0.6em 0.5em; // Uniform padding on the GtkColorButton
 
-  GtkColorSwatch:first-child:last-child { // :first-child:last-child for a 
-                                          // specificity bump, it gets 
+  GtkColorSwatch:first-child:last-child { // :first-child:last-child for a
+                                          // specificity bump, it gets
                                           // overridden by the
                                           // colorpicker style, otherwise
     border-radius: 2px;
@@ -1611,10 +1611,11 @@ GtkComboBox {
 
 %maxd_integration {
   border-radius: 0;
-  border-color: $panel_bg_color;
-  border-width: 1px 0 0 0;
+  border-width: 0;
   background-color: $panel_bg_color;
   box-shadow: none;
+  padding-right: 0px;
+  padding-top: 0px;
 }
 
 
@@ -3168,7 +3169,7 @@ GtkPlacesSidebar.sidebar {
   // inheritance broken so istead of
   // "GtkPlacesSidebar.sidebar .sidebar-button.button" [specificity 0,0,3,1]
   // the extended selector ".sidebar-button.button" [specificity 0,0,2,0]
-  @at-root .sidebar-button.button { 
+  @at-root .sidebar-button.button {
     &.image-button {
       padding: 4px;
       color: $secondary_fg_color;
@@ -3924,4 +3925,3 @@ GtkVolumeButton.button {
   &.left { @include undershoot(left); }
   &.right { @include undershoot(right); }
 }
-

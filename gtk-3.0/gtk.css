@@ -2284,10 +2284,11 @@ GtkBox .header-bar.selection-mode:not(:only-child):last-child:dir(rtl) {
 .maximized .titlebar, .maximized
 .header-bar, .maximized .csd .header-bar, .maximized GtkBox .header-bar:only-child, .maximized GtkBox .header-bar:not(:only-child):last-child:dir(ltr), .maximized GtkBox .header-bar:not(:only-child):last-child:dir(rtl), .maximized GtkPaned .header-bar:not(:only-child):last-child:dir(ltr), .maximized GtkPaned .header-bar:not(:only-child):last-child:dir(rtl), .maximized GtkBox .header-bar.selection-mode:not(:only-child):last-child:dir(ltr), .maximized GtkBox .header-bar.selection-mode:not(:only-child):last-child:dir(rtl), .window-frame.ssd .maximized .titlebar {
   border-radius: 0;
-  border-color: #13191c;
-  border-width: 1px 0 0 0;
+  border-width: 0;
   background-color: #13191c;
-  box-shadow: none; }
+  box-shadow: none;
+  padding-right: 0px;
+  padding-top: 0px; }
 
 /************
  * Pathbars *
